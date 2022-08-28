@@ -47,7 +47,7 @@ button {
 
 }
 body {
-    font-size: 14px;
+    font-size: 16px;
     font-family: 'Roboto', sans-serif;
     letter-spacing: 0.03em;
     background-color: var(--white-color);
@@ -72,13 +72,18 @@ body {
     color: #000000;
 }
 .page-header {
-        border-bottom: 1px solid #ECECEC;
+        border-bottom: 1px solid #ECECEC;   
+}
+.page-header-portfolio {
+    padding-bottom: 94px;
+    
 }
 /* Site nav */
 .header-box {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 1px solid #ECECEC;
 }
 .site-nav {
     display: flex;
@@ -100,16 +105,12 @@ body {
         font-weight: 500;
         line-height: 1.14;
         letter-spacing: 0.02em;
-    color: var(--second-color);
+        color: var(--second-color);
 }
 .site-nav .link:hover,
 .site-nav .link:focus{
     color: var(--accent-color);
 }
-/*.site-nav .link.current {
-    color: var(--accent-color);
-} */
-
 /* Site auth-nav */
 .auth-nav {
     display: flex;
@@ -123,6 +124,7 @@ body {
 } */
 .auth-nav-mail,
 .auth-nav-phone{
+        display: inline-block;
         padding-top: 32px;
         padding-bottom: 32px;
         font-weight: 500;
@@ -134,6 +136,10 @@ body {
 .auth-nav-mail:focus{
     color: var(--accent-color);
 }
+.site-nav .current {
+        color: var(--accent-color);
+}
+       
 /*  Hero */
 .visually-hidden {
     position: absolute;
@@ -173,7 +179,7 @@ body {
 .portfolio-buttons {
         border: none;
         border-radius: 4px;
-        box-shadow: 10px 5px 5px var(--basic-color);
+        
         font-family: 'Roboto', sans-serif;
         font-weight: 500;
         font-size: 16px;
@@ -187,10 +193,11 @@ body {
 .portfolio-buttons:focus{
     color: var(--white-color);
     background-color: var(--accent-color);
+    box-shadow: 2px 2px 2px var(--basic-color);
 }
 .porfolio-box {
             display: flex;
-            padding-bottom: 94px;
+            
             flex-wrap: wrap;
             gap: 30px;
 }
@@ -220,9 +227,13 @@ body {
         color: var(--basic-color);
 
 }
+.porfolio-box .portfolio-project {
+    font-size: 16px;
+}
 
 .hero {
-    
+    padding-top: 200px;
+    padding-bottom: 200px;
     background-color: #2F303A;
     }
 .hero-box {
@@ -234,7 +245,7 @@ body {
         padding-bottom: 280px;
         }
 .hero-title {
-        
+        margin-bottom: 30px;
         font-weight: 900;
         font-size: 44px;
         line-height: 1.36;
@@ -243,7 +254,7 @@ body {
         text-align: center;
         letter-spacing: 0.06em;
         text-transform: uppercase;
-    color:var(--white-color);
+        color:var(--white-color);
 }
 .hero-button {
         display: block;
@@ -275,12 +286,17 @@ body {
 .benefits-list .benefits-item:not(:last-child) {
     margin-right: 30px;
 }
+.benefits-item {
+    width: 270px;
+}
 .section-title-list {
         margin-bottom: 10px;
 }
-
+.activity {
+    padding-bottom: 94px;
+}
 .section-title {
-        padding-bottom: 50px;
+        margin-bottom: 50px;
         font-weight: 700;
         font-size: 36px;
         line-height: 1.17;
@@ -290,6 +306,7 @@ body {
 .section-title-list {
         
         font-weight: 700;
+        font-size: 14px;
         line-height: 1.14;
         letter-spacing: 0.03em;
         text-transform: uppercase;
@@ -304,24 +321,36 @@ body {
 }
 .section-list {
     display: flex;
-    padding-bottom: 94px;
 }
 .section-list .section-item:not(:last-child) {
     margin-right: 32px;
 }
+.team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 .our-team {
-    background-color: #F5F4FA;
+    background-color: var(--white-color);
+    
 }
 .team-list {
     display: flex;
-    padding-bottom: 94px;
 }
 .team-item:not(:last-child) {
     margin-right: 32px;
 }
+.team-item .team-title-list {
+    font-size: 16px;
+}
+
 .team-member {
+    font-size: 16px;
     text-align: center;
     padding: 30px;
+}
+.team-title-list {
+    margin-bottom: 10px;
+    
 }
 
 .page-footer {
@@ -350,9 +379,14 @@ body {
        
         text-decoration: none;
         font-style: normal;
+        font-size: 14px;
         font-weight: 400;
         line-height: 1.71;
         /* or 171% */
         color: rgba(255, 255, 255, 0.6);
+}
+.adress-list {
+    margin-bottom: 9px;
+    font-size: 14px;
 }
  
